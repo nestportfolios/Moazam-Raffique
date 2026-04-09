@@ -139,22 +139,29 @@ h1, h2, h3 {
     border-bottom: 2px solid var(--color-accent);
 }
 
-/* Nav Headline Banner */
+/* Headline Banner */
 .nav-headline-banner {
     background: var(--color-secondary);
     width: 100%;
     text-align: center;
-    padding: 5px 0;
+    padding: 0.5px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
+}
+
+.hero-banner-override {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
 }
 
 .credit-link {
     text-decoration: none;
     color: #4CAF50;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.0px;
     display: block;
 }
 
@@ -265,9 +272,9 @@ h1, h2, h3 {
     width: 100%;
     text-align: center;
     padding: 5px 0;
-    background: var(--color-secondary);
-    color: var(--color-white);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* background: var(--color-secondary); */
+    /* color: var(--color-white); */
+    /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .site-credit a {
@@ -298,12 +305,13 @@ h1, h2, h3 {
 }
 
 .hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
     max-width: 1200px;
     width: 100%;
-    align-items: center;
 }
 
 .hero-text h1 {
@@ -337,7 +345,7 @@ h1, h2, h3 {
     margin-top: 40px;
     width: 100%;
     max-width: 380px;
-    height: 380px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 15px 35px rgba(0, 51, 102, 0.2);
@@ -754,8 +762,8 @@ footer {
 
     .hero-image img {
         margin-top: 0;
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        max-width: 200px;
     }
 
     .hero-buttons {
@@ -811,8 +819,8 @@ footer {
     }
 
     .hero-image img {
-        width: 170px;
-        height: 170px;
+        width: 100%;
+        max-width: 170px;
     }
 
     .hero-buttons {
