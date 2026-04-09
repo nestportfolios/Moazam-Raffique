@@ -139,33 +139,30 @@ h1, h2, h3 {
     border-bottom: 2px solid var(--color-accent);
 }
 
-/* Headline Banner */
-.nav-headline-banner {
-    background: var(--color-secondary);
-    width: 100%;
-    text-align: center;
-    padding: 0.5px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+/* Logo Content */
+.nav-logo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.hero-banner-override {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    z-index: 10;
+.logo-name {
+    font-size: 1.8rem;
+    line-height: 1.2;
 }
 
-.credit-link {
+.nav-credit-small {
     text-decoration: none;
-    color: #4CAF50;
+    color: #d6169c;
     font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 1.0px;
-    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    line-height: 1;
 }
 
-.credit-link:hover {
+.nav-credit-small:hover {
     color: #81c784;
 }
 
@@ -271,7 +268,7 @@ h1, h2, h3 {
 .site-credit {
     width: 100%;
     text-align: center;
-    padding: 5px 0;
+    padding: 2px 0;
     /* background: var(--color-secondary); */
     /* color: var(--color-white); */
     /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
@@ -856,6 +853,12 @@ footer {
 
     .logo {
         font-size: 1.1rem;
+    .logo-name {
+        font-size: 1.2rem;
+    }
+
+    .nav-credit-small {
+        font-size: 0.55rem;
     }
 }
 
